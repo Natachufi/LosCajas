@@ -14,7 +14,7 @@ public class Camara_giros : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		Debug.Log (transform.rotation.z);
 		transform.position = new Vector3 (target.position.x, target.position.y + 2, target.position.z);
 
 		if (Input.GetKey (KeyCode.A)){
