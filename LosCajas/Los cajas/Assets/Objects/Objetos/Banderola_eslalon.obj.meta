@@ -8,15 +8,35 @@ ModelImporter:
     100000: //RootNode
     100002: Plane001
     100004: Box001
+    100006: Cylinder001
+    100008: Cylinder002
+    100010: Sphere001
+    100012: Sphere002
     400000: //RootNode
     400002: Plane001
     400004: Box001
+    400006: Cylinder001
+    400008: Cylinder002
+    400010: Sphere001
+    400012: Sphere002
     2300000: Plane001
     2300002: Box001
+    2300004: Cylinder001
+    2300006: Cylinder002
+    2300008: Sphere001
+    2300010: Sphere002
     3300000: Plane001
     3300002: Box001
+    3300004: Cylinder001
+    3300006: Cylinder002
+    3300008: Sphere001
+    3300010: Sphere002
     4300000: Plane001
     4300002: Box001
+    4300004: Cylinder001
+    4300006: Cylinder002
+    4300008: Sphere001
+    4300010: Sphere002
   materials:
     importMaterials: 1
     materialName: 0
