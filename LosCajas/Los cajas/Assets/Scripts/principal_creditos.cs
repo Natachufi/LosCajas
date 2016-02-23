@@ -7,6 +7,7 @@ public class principal_creditos : MonoBehaviour {
 	public float tiempo_mirada = 3f;
 	float tiempo = 0;
 	bool mirando = false;
+	bool activado = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -16,8 +17,9 @@ public class principal_creditos : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(mirando && tiempo < Time.time  ){
-			Debug.Log ( "miau");
+			anim.SetBool("activado",true);
 		}
+
 		
 	}
 	
@@ -33,5 +35,12 @@ public class principal_creditos : MonoBehaviour {
 		mirando = false;
 		Debug.Log ( "pequeño");
 		
+	}
+
+	public void sale_creditos(){ //cuando el boton vuelve a su tamaño original
+		anim.SetBool("mirando", false);
+		mirando = false;
+		Debug.Log ( "pequeño");
+		anim.SetBool("activado",false);
 	}
 }
