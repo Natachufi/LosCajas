@@ -17,6 +17,7 @@ public class principal_jugar : MonoBehaviour {
 	void Update () {
 		if(mirando && tiempo < Time.time  ){
 			Debug.Log ( "miau");
+			Application.LoadLevel("nivel1");
 		}
 		
 	}

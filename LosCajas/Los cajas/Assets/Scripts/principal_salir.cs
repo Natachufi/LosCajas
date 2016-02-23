@@ -16,6 +16,7 @@ public class principal_salir : MonoBehaviour {
 	void Update () {
 		if(mirando && tiempo < Time.time  ){
 			Debug.Log ( "miau");
+			Application.Quit();
 		}
 	
 	}
