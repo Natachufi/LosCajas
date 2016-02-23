@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class botones : MonoBehaviour {
+public class Botones : MonoBehaviour {
+
+	Animator anim;
 
 	// Use this for initialization
 	void Start () {
+
+		anim = GetComponent <Animator> ();
 	
 	}
 	
@@ -13,11 +17,13 @@ public class botones : MonoBehaviour {
 	
 	}
 
-	public void salir (){
-		Application.Quit ();
+	public void parpadea (){
+
+		anim.SetBool ("mirando", true);
+	
 	}
 
-	public void reanudar () {
-		Application.LoadLevel ("pruebaluciana");
+	public void noparpadea(){
+		anim.SetBool ("mirando", false);
 	}
 }
