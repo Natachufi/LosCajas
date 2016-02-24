@@ -6,6 +6,7 @@ public class barra_tiempo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		gameObject.SetActive(false);
 		anim = GetComponent<Animator>();
 	}
 	
