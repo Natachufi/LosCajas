@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class menupausa : MonoBehaviour {
@@ -16,40 +17,57 @@ public class menupausa : MonoBehaviour {
 	
 
 	void Update () {
+
+
 	}
 
 
-	public void oculta_menu(){
+	public void oculta_menu(){ //funcion que oculta el menu
 
-        if (mirando && tiempo < Time.time) {
-			Time.timeScale = 1f;
+
+        	Debug.Log ("reanudo"); 
 			anim.SetBool ("mostrar", false);
+			Time.timeScale = 1f;
 
 		}
-	}
 
 
-	public void salir(){
 
-		if (mirando && tiempo < Time.time) {
+	public void salir() { //funcion que sale del juego
+
 			Application.Quit ();
 
 		}
+
+
+
+	public void muestra_menu () { //funcion que muestra el menu
+	
+		if(anim.GetBool ("mostrar") == false){ //si el menu esta oculto
+			anim.SetBool("mostrar", true); //el menu se vuelve visible
+			Parartiempo();
+			Debug.Log ("tiempo parado");
+		}
 	}
 
+	public void parpadea (){ //funcion que hace resaltar los botones
 
 
-	public void activador(){
-
-		Debug.Log ("hago algo");
+		anim.SetBool ("mirando", true);
+		mirando = true;
+		
+	}
 	
-		if(anim.GetBool ("mostrar") == false){
-			anim.SetBool("mostrar", true);
-			
-		}else{
-			
-			anim.SetBool("mostrar",false);
-		}
+	public void noparpadea(){ //funcion que hace que los botones dejen de resaltar
+
+		anim.SetBool ("mirando", false);
+		mirando = false;
+
+	}
+	void Parartiempo(){
+
+		Debug.Log ("paro el tiempo");
+		Time.timeScale = 0; //pausamos el juego
 	}
 
 
