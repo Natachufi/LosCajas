@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
+
 public class Bebida_Energetica : MonoBehaviour
 {
 	bool bebida = false;
 	Rigidbody rg;
 
+
 	void Start()
 	{
 		rg = GetComponent<Rigidbody>();
+
 	}
 
 	void Update()
@@ -24,8 +29,9 @@ public class Bebida_Energetica : MonoBehaviour
 	{
 		if(objeto.transform.tag == "bebida")
 		{
+
 			bebida=true;
-			Destroy(objeto.gameObject);
+			Destroy(objeto.gameObject,2);
 		}
 	}
 }
