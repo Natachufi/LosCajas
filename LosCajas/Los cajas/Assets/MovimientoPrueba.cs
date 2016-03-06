@@ -31,6 +31,7 @@ public class MovimientoPrueba : MonoBehaviour {
 			rg.AddForce(drcha);
 
 		}
+		/*
 		if(Head.rotation.eulerAngles.z >0 && Head.transform.rotation.eulerAngles.z <60)
 		{
 			transform.rotation = Quaternion.Lerp(Quaternion.Euler(0, 0, 0), Quaternion.Euler(0, 45, 0),(60*Head.transform.rotation.eulerAngles.z/10000));
@@ -54,6 +55,7 @@ public class MovimientoPrueba : MonoBehaviour {
 			rg.angularVelocity = Vector3.zero; 
 			
 		}
+		*/
 
 
 	}
