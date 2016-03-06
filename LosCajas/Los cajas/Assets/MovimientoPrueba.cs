@@ -21,14 +21,14 @@ public class MovimientoPrueba : MonoBehaviour {
 		{
 			Debug.Log ("derecha_bien");
 			//Como los controles estan invertidos, el movimiento es al contrario cuando se llama.
-			rg.AddForce(drcha);
+			rg.AddForce(izq);
 
 		}
 		if (Head.rotation.eulerAngles.z >30 && Head.transform.rotation.eulerAngles.z <180)
 		{
 			Debug.Log ("izquierda_bien");
 			//Como los controles estan invertidos, el movimiento es al contrario cuando se llama.
-			rg.AddForce(izq);
+			rg.AddForce(drcha);
 
 		}
 		if(Head.rotation.eulerAngles.z >0 && Head.transform.rotation.eulerAngles.z <60)
