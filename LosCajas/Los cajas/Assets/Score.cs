@@ -20,7 +20,7 @@ public class Score : MonoBehaviour {
 
 	void OnTriggerEnter (Collider objeto) {
 		    
-			Debug.Log ("entra");
+		Debug.Log ("entra");
 
 		if (objeto.transform.tag == "Player") {
 
