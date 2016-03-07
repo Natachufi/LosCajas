@@ -20,7 +20,7 @@ public class Bebida_Energetica : MonoBehaviour
 	{
 		if(bebida)
 		{
-			rg.AddForce(transform.forward*200);
+			rg.AddForce(transform.forward*20);
 			bebida=false;
 		}	
 	}
